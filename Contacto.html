@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirasur Tli S.A.C. — Contacto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-img">MT</div>
+            <div class="nav-logo-text"><span class="nav-logo-name">MIRASUR TLI</span><span
+                    class="nav-logo-sac">S.A.C.</span></div>
+        </a>
+        <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-link is-active nav-cta">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero" style="padding-bottom:4rem;">
+        <div class="page-hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="container">
+            <span class="eyebrow">Estamos aquí</span>
+            <h1 class="page-title">Contáctanos</h1>
+            <p class="page-sub">Cuéntanos lo que necesitas y un representante de Mirasur Tli S.A.C. te responderá a la
+                brevedad.</p>
+        </div>
+    </section>
+
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="contact-main">
+                <div data-aos="right">
+                    <span class="eyebrow">Información</span>
+                    <h2 class="block-title" style="font-size:2.2rem;">Datos de <em>Contacto</em></h2>
+                    <p class="block-sub">Puedes contactarnos por cualquiera de estos medios o completar el formulario.
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📍</div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Jr. Revolución N° 377<br />Distrito, Provincia y Departamento de Puno, Perú</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">🌐</div>
+                            <div>
+                                <h4>Cobertura</h4>
+                                <p>Nacional e Internacional · Agencias en todo el Perú</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">🕐</div>
+                            <div>
+                                <h4>Horario de Atención</h4>
+                                <p>Lun–Vie: 8:00 am – 6:00 pm · Sáb: 8:00 am – 1:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOTO OFICINA — reemplaza el placeholder -->
+                    <div class="photo-frame photo-frame-border ratio-4-3" style="margin-top:1.5rem;">
+                        <!-- <img src="fotos/contacto-oficina.jpg" alt="Oficina Mirasur"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🏢</div>
+                            <div class="photo-placeholder-text">Foto Oficina</div>
+                            <div class="photo-placeholder-sub">Fachada o interior de oficina · 600×450px</div>
+                        </div>
+                        <div class="photo-caption">Oficina principal — Jr. Revolución N° 377, Puno</div>
+                    </div>
+                    <div class="service-quick" style="margin-top:1.8rem;">
+                        <h4>Consulta rápida por servicio:</h4>
+                        <div class="sq-grid">
+                            <a class="sq-btn" data-srv="Transporte">🚛 Transporte</a>
+                            <a class="sq-btn" data-srv="Turismo">🏔️ Turismo</a>
+                            <a class="sq-btn" data-srv="Comercio">🛒 Comercio</a>
+                            <a class="sq-btn" data-srv="Gastronomía">🍽️ Gastronomía</a>
+                            <a class="sq-btn" data-srv="Licitaciones">⚖️ Licitaciones</a>
+                            <a class="sq-btn" data-srv="Otro">💬 Otro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="form-section" data-aos="left">
+                    <form class="the-form" id="contactForm" novalidate>
+                        <h3>Envíanos un mensaje</h3>
+                        <div class="fg"><label for="nombre">Nombre completo *</label><input type="text" id="nombre"
+                                placeholder="Tu nombre completo" required /></div>
+                        <div class="fg-row">
+                            <div class="fg"><label for="email">Correo electrónico *</label><input type="email"
+                                    id="email" placeholder="tu@correo.com" required /></div>
+                            <div class="fg"><label for="telefono">Teléfono / WhatsApp</label><input type="tel"
+                                    id="telefono" placeholder="+51 000 000 000" /></div>
+                        </div>
+                        <div class="fg"><label for="empresa">Empresa / Institución</label><input type="text"
+                                id="empresa" placeholder="Nombre de tu empresa (opcional)" /></div>
+                        <div class="fg">
+                            <label for="servicio">Servicio de interés *</label>
+                            <select id="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option>Transporte de Carga Pesada</option>
+                                <option>Transporte de Minerales</option>
+                                <option>Transporte de Pasajeros</option>
+                                <option>Transporte Interurbano — Puno</option>
+                                <option>Encomiendas y Equipaje</option>
+                                <option>Turismo y Tours</option>
+                                <option>Excursiones Regionales</option>
+                                <option>Comercio al por Mayor</option>
+                                <option>Gastronomía y Catering</option>
+                                <option>Licitaciones Públicas</option>
+                                <option>Licitaciones Privadas</option>
+                                <option>Convenio o Asociación</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="fg"><label for="mensaje">Mensaje *</label><textarea id="mensaje" rows="5"
+                                placeholder="Cuéntanos tu necesidad con el mayor detalle posible..."
+                                required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje →</button>
+                        <div id="formSuccess" class="form-ok hidden">✅ Mensaje enviado. Nos comunicaremos contigo
+                            pronto.</div>
+                        <div id="formError" class="form-err hidden">⚠️ Por favor completa todos los campos requeridos.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="section bg-mid">
+        <div class="container">
+            <div class="block-header centered">
+                <span class="eyebrow">Ubicación</span>
+                <h2 class="block-title">Dónde <em>encontrarnos</em></h2>
+            </div>
+            <div class="map-display" data-aos>
+                <div class="map-display-inner">
+                    <div class="map-visual">
+                        <div class="map-dot-wrap">
+                            <div class="map-dot-core">📍</div>
+                            <div class="map-ring"></div>
+                            <div class="map-ring map-ring-2"></div>
+                        </div>
+                        <p class="map-label">Jr. Revolución N° 377<br />Puno, Perú</p>
+                    </div>
+                    <div class="map-data">
+                        <div class="map-data-item"><span class="md-t">Empresa</span><span class="md-v">Mirasur Tli
+                                S.A.C.</span></div>
+                        <div class="map-data-item"><span class="md-t">Departamento</span><span class="md-v">Puno</span>
+                        </div>
+                        <div class="map-data-item"><span class="md-t">Provincia</span><span class="md-v">Puno</span>
+                        </div>
+                        <div class="map-data-item"><span class="md-t">Dirección</span><span class="md-v">Jr. Revolución
+                                N° 377</span></div>
+                        <div class="map-data-item"><span class="md-t">País</span><span class="md-v">🇵🇪 Perú</span>
+                        </div>
+                        <div class="map-data-item"><span class="md-t">Altitud</span><span class="md-v">3,827
+                                m.s.n.m.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="nav-logo" style="margin-bottom:.4rem;">
+                        <div class="nav-logo-img">MT</div>
+                        <div class="nav-logo-text"><span class="nav-logo-name">MIRASUR TLI</span><span
+                                class="nav-logo-sac">S.A.C.</span></div>
+                    </a>
+                    <p>Empresa peruana multirubro con sede en Puno.</p>
+                    <p class="footer-addr">📍 Jr. Revolución N° 377 · Puno, Perú</p>
+                </div>
+                <div>
+                    <h5>Navegación</h5>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Servicios</h5>
+                    <ul class="footer-nav">
+                        <li><a href="servicios.html#transporte">Transporte</a></li>
+                        <li><a href="servicios.html#turismo">Turismo</a></li>
+                        <li><a href="servicios.html#comercio">Comercio</a></li>
+                        <li><a href="servicios.html#gastronomia">Gastronomía</a></li>
+                        <li><a href="servicios.html#licitaciones">Licitaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Mirasur Tli S.A.C. — Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirasur Tli S.A.C. — Servicios</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <style>
+        .acc-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            overflow: hidden;
+            transition: border-color var(--tr);
+            margin-bottom: .6rem
+        }
+
+        .acc-item.open {
+            border-color: var(--amber-bdr)
+        }
+
+        .acc-trigger {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.4rem 1.6rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            color: var(--text);
+            font-family: var(--ff-b);
+            font-size: .95rem;
+            font-weight: 600;
+            transition: background var(--tr)
+        }
+
+        .acc-trigger:hover {
+            background: rgba(255, 255, 255, .03)
+        }
+
+        .acc-ico {
+            font-size: 1.5rem;
+            flex-shrink: 0
+        }
+
+        .acc-label {
+            flex: 1
+        }
+
+        .acc-chevron {
+            font-size: 1.4rem;
+            color: var(--amber);
+            transition: transform var(--tr)
+        }
+
+        .acc-item.open .acc-chevron {
+            transform: rotate(45deg)
+        }
+
+        .acc-body {
+            display: none;
+            padding: 0 1.6rem 1.4rem
+        }
+
+        .acc-item.open .acc-body {
+            display: block
+        }
+
+        .acc-body p {
+            font-size: .9rem;
+            color: var(--text2);
+            line-height: 1.7;
+            margin-bottom: 1rem
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-img">MT</div>
+            <div class="nav-logo-text"><span class="nav-logo-name">MIRASUR TLI</span><span
+                    class="nav-logo-sac">S.A.C.</span></div>
+        </a>
+        <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="servicios.html" class="nav-link is-active">Servicios</a></li>
+            <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-link nav-cta">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="container">
+            <span class="eyebrow">Lo que ofrecemos</span>
+            <h1 class="page-title">Nuestros <em>Servicios</em></h1>
+            <p class="page-sub">Cinco rubros distintos, gestionados con especialización y compromiso total.</p>
+            <div class="quick-links">
+                <a href="#transporte" class="ql">🚛 Transporte</a>
+                <a href="#turismo" class="ql">🏔️ Turismo</a>
+                <a href="#comercio" class="ql">🛒 Comercio</a>
+                <a href="#gastronomia" class="ql">🍽️ Gastronomía</a>
+                <a href="#licitaciones" class="ql">⚖️ Licitaciones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 01 TRANSPORTE -->
+    <section class="srv-section bg-dark" id="transporte">
+        <div class="srv-section-label">01</div>
+        <div class="container">
+            <div class="srv-section-header">
+                <div class="srv-section-tag">Transporte &amp; Logística</div>
+                <h2 class="srv-title">Movemos el <em>Perú</em></h2>
+                <p class="srv-desc">Flota especializada para carga pesada, minerales, pasajeros y encomiendas. Rutas
+                    nacionales con puntualidad y seguridad garantizadas.</p>
+            </div>
+            <div class="transport-layout">
+                <div class="transport-cards">
+                    <div class="transport-card" data-aos>
+                        <div class="tc-icon">🚛</div>
+                        <div>
+                            <h4>Carga Pesada Nacional</h4>
+                            <p>Traslado de insumos químicos fiscalizados, baterías, pinturas acrílicas y minerales a
+                                nivel nacional.</p>
+                        </div>
+                    </div>
+                    <div class="transport-card" data-aos>
+                        <div class="tc-icon">⛏️</div>
+                        <div>
+                            <h4>Transporte de Minerales</h4>
+                            <p>Oro, cobre, plata y otros minerales desde las minas a cualquier destino del país con
+                                documentación completa.</p>
+                        </div>
+                    </div>
+                    <div class="transport-card" data-aos>
+                        <div class="tc-icon">🚌</div>
+                        <div>
+                            <h4>Pasajeros Urbanos</h4>
+                            <p>Transporte de pasajeros en zonas Norte y Sur del departamento de Lima a nivel nacional
+                                con combis y camionetas.</p>
+                        </div>
+                    </div>
+                    <div class="transport-card" data-aos>
+                        <div class="tc-icon">📦</div>
+                        <div>
+                            <h4>Encomiendas &amp; Equipaje</h4>
+                            <p>Transporte seguro de equipajes y encomiendas en camiones a todo destino del Perú con
+                                seguimiento garantizado.</p>
+                        </div>
+                    </div>
+                    <div class="transport-card" data-aos>
+                        <div class="tc-icon">🚐</div>
+                        <div>
+                            <h4>Interurbano — Puno</h4>
+                            <p>Alquiler de camionetas rurales y combis en las zonas norte y sur del departamento de Puno
+                                para empresas e instituciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="transport-photo-col">
+                    <!-- FOTO TRANSPORTE 1 — reemplaza el placeholder -->
+                    <div class="photo-frame photo-frame-border ratio-16-9" data-aos="left">
+                        <!-- <img src="fotos/transporte-camion.jpg" alt="Camión en ruta"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🚛</div>
+                            <div class="photo-placeholder-text">Foto Transporte 1</div>
+                            <div class="photo-placeholder-sub">Camión en ruta, flota pesada · 800×450px</div>
+                        </div>
+                        <div class="photo-caption">Flota de transporte pesado</div>
+                    </div>
+                    <!-- FOTO TRANSPORTE 2 — reemplaza el placeholder -->
+                    <div class="photo-frame photo-frame-border ratio-4-3" data-aos="left">
+                        <!-- <img src="fotos/transporte-carga.jpg" alt="Carga"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">📦</div>
+                            <div class="photo-placeholder-text">Foto Transporte 2</div>
+                            <div class="photo-placeholder-sub">Carga, almacén, encomiendas · 600×450px</div>
+                        </div>
+                        <div class="photo-caption">Logística y encomiendas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 TURISMO -->
+    <section class="srv-section bg-mid" id="turismo">
+        <div class="srv-section-label">02</div>
+        <div class="container">
+            <div class="srv-section-header">
+                <div class="srv-section-tag">Turismo &amp; Tours</div>
+                <h2 class="srv-title">Descubre el <em>Perú</em></h2>
+                <p class="srv-desc">Organizamos tours, excursiones y experiencias turísticas únicas desde el Lago
+                    Titicaca hasta cualquier rincón del país.</p>
+            </div>
+            <div class="turismo-layout">
+                <div class="turismo-photo-col">
+                    <!-- FOTOS TURISMO — reemplaza los placeholders -->
+                    <div class="photo-frame photo-frame-border ratio-16-9" data-aos>
+                        <!-- <img src="fotos/turismo-titicaca.jpg" alt="Lago Titicaca"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🌊</div>
+                            <div class="photo-placeholder-text">Foto Turismo 1 — Principal</div>
+                            <div class="photo-placeholder-sub">Lago Titicaca o panorama de Puno · 800×450px</div>
+                        </div>
+                        <div class="photo-caption">Lago Titicaca — 3,827 m.s.n.m.</div>
+                    </div>
+                    <div class="photo-frame photo-frame-border ratio-1-1" data-aos>
+                        <!-- <img src="fotos/turismo-tour.jpg" alt="Tour en grupo"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🎒</div>
+                            <div class="photo-placeholder-text">Foto Turismo 2</div>
+                            <div class="photo-placeholder-sub">Grupo en tour o excursión · 400×400px</div>
+                        </div>
+                        <div class="photo-caption">Tours en grupo</div>
+                    </div>
+                    <div class="photo-frame photo-frame-border ratio-1-1" data-aos>
+                        <!-- <img src="fotos/turismo-comunidad.jpg" alt="Comunidad"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🏘️</div>
+                            <div class="photo-placeholder-text">Foto Turismo 3</div>
+                            <div class="photo-placeholder-sub">Comunidades, cultura andina · 400×400px</div>
+                        </div>
+                        <div class="photo-caption">Experiencias culturales</div>
+                    </div>
+                </div>
+                <div class="turismo-blocks">
+                    <div class="turismo-block" data-aos>
+                        <div class="tb-num">A</div>
+                        <div class="tb-content">
+                            <h3>Tours Nacionales</h3>
+                            <p>Organizamos tours completos a cualquier destino del Perú con guías especializados,
+                                vehículos cómodos y paquetes a medida.</p>
+                        </div>
+                    </div>
+                    <div class="turismo-block" data-aos>
+                        <div class="tb-num">B</div>
+                        <div class="tb-content">
+                            <h3>Excursiones Regionales</h3>
+                            <p>Excursiones de un día o varios días a los destinos más emblemáticos de la región Puno:
+                                Lago Titicaca, Islas Uros, Taquile y Amantaní.</p>
+                        </div>
+                    </div>
+                    <div class="turismo-block" data-aos>
+                        <div class="tb-num">C</div>
+                        <div class="tb-content">
+                            <h3>Transporte Turístico</h3>
+                            <p>Flota de vehículos modernos. Traslados aeropuerto-hotel, rutas programadas y transporte
+                                privado para grupos de cualquier tamaño.</p>
+                        </div>
+                    </div>
+                    <div class="turismo-block" data-aos>
+                        <div class="tb-num">D</div>
+                        <div class="tb-content">
+                            <h3>Experiencias Culturales</h3>
+                            <p>Vivencias auténticas de la cultura andina: festivales tradicionales, gastronomía local y
+                                contacto real con las tradiciones del altiplano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 COMERCIO -->
+    <section class="srv-section bg-dark" id="comercio">
+        <div class="srv-section-label">03</div>
+        <div class="container">
+            <div class="srv-section-header">
+                <div class="srv-section-tag">Comercio al por Mayor</div>
+                <h2 class="srv-title">Distribución <em>Nacional</em></h2>
+                <p class="srv-desc">Venta y distribución al por mayor de una amplia gama de productos, conectando
+                    productores con comercios especializados en todo el Perú.</p>
+            </div>
+            <!-- FOTO BANNER COMERCIO -->
+            <div class="photo-frame photo-frame-border ratio-21-9" data-aos style="margin-bottom:2.5rem;">
+                <!-- <img src="fotos/comercio-almacen.jpg" alt="Almacén"> -->
+                <div class="photo-placeholder">
+                    <div class="photo-placeholder-icon">🏭</div>
+                    <div class="photo-placeholder-text">Foto Comercio — Panorámica</div>
+                    <div class="photo-placeholder-sub">Almacén, bodega o distribución de productos · 1200×514px</div>
+                </div>
+                <div class="photo-caption">Centro de distribución — Mirasur Tli S.A.C.</div>
+            </div>
+            <div class="acc-item" data-aos><button class="acc-trigger"><span class="acc-ico">💊</span><span
+                        class="acc-label">Farmacéuticos, Médicos &amp; Cosméticos</span><span
+                        class="acc-chevron">+</span></button>
+                <div class="acc-body">
+                    <p>Venta al por mayor de productos farmacéuticos y médicos, cosméticos y artículos de tocador en
+                        comercios especializados a nivel nacional.</p>
+                    <div class="tag-wrap"><span>Medicamentos</span><span>Insumos
+                            médicos</span><span>Cosméticos</span><span>Artículos de tocador</span></div>
+                </div>
+            </div>
+            <div class="acc-item" data-aos><button class="acc-trigger"><span class="acc-ico">🛒</span><span
+                        class="acc-label">Alimentos, Abarrotes &amp; Bebidas</span><span
+                        class="acc-chevron">+</span></button>
+                <div class="acc-body">
+                    <p>Distribución al por mayor de alimentos frescos y secos, bebidas, embutidos cárnicos frescos,
+                        condimentos y especerías en puestos de venta y mercado.</p>
+                    <div class="tag-wrap"><span>Alimentos
+                            frescos</span><span>Bebidas</span><span>Embutidos</span><span>Condimentos</span><span>Especerías</span><span>Abarrotes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item" data-aos><button class="acc-trigger"><span class="acc-ico">👗</span><span
+                        class="acc-label">Textiles, Cueros &amp; Ropa Importada</span><span
+                        class="acc-chevron">+</span></button>
+                <div class="acc-body">
+                    <p>Venta al por mayor de materias textiles, cueros, hilos, costuras, materiales de enseñanza y ropa
+                        importada de calidad.</p>
+                    <div class="tag-wrap"><span>Textiles</span><span>Cueros</span><span>Hilos y
+                            costuras</span><span>Ropa importada</span><span>Zapatillas</span></div>
+                </div>
+            </div>
+            <div class="acc-item" data-aos><button class="acc-trigger"><span class="acc-ico">🔧</span><span
+                        class="acc-label">Maquinaria, Equipos &amp; Herramientas</span><span
+                        class="acc-chevron">+</span></button>
+                <div class="acc-body">
+                    <p>Comercio al por mayor de máquinas y equipos de oficina, accesorios y repuestos en general, y
+                        herramientas de todo tipo para el mercado nacional.</p>
+                    <div class="tag-wrap"><span>Equipos de
+                            oficina</span><span>Repuestos</span><span>Herramientas</span><span>Maquinaria</span></div>
+                </div>
+            </div>
+            <div class="acc-item" data-aos><button class="acc-trigger"><span class="acc-ico">⌚</span><span
+                        class="acc-label">Relojes, Pilas &amp; Artículos Varios</span><span
+                        class="acc-chevron">+</span></button>
+                <div class="acc-body">
+                    <p>Compra y venta al por mayor de relojes, pulseras, pilas, baterías y una amplia variedad de
+                        artículos varios para el mercado nacional.</p>
+                    <div class="tag-wrap"><span>Relojes</span><span>Pulseras</span><span>Pilas y
+                            baterías</span><span>Artículos varios</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 GASTRONOMÍA -->
+    <section class="srv-section bg-mid" id="gastronomia">
+        <div class="srv-section-label">04</div>
+        <div class="container">
+            <div class="srv-section-header">
+                <div class="srv-section-tag">Gastronomía &amp; Eventos</div>
+                <h2 class="srv-title">Sabor <em>Peruano</em></h2>
+                <p class="srv-desc">Desde la pastelería artesanal hasta banquetes corporativos. Comida auténtica peruana
+                    con el alma de Puno.</p>
+            </div>
+            <div class="gastro-layout">
+                <div class="gastro-cards">
+                    <div class="gastro-card" data-aos>
+                        <div class="gc-icon">🎂</div>
+                        <h3>Pastelería &amp; Panadería</h3>
+                        <p>Pasteles, tortas y panes artesanales para venta directa y distribución a tiendas y negocios.
+                        </p>
+                    </div>
+                    <div class="gastro-card gastro-card-star" data-aos>
+                        <div class="gc-icon">🍽️</div>
+                        <h3>Platos Típicos &amp; Carta</h3>
+                        <p>Comida criolla, oriental, platos típicos puneños y carta variada para todos los gustos.</p>
+                        <div class="menu-pills"><span>🍋 Ceviche</span><span>🐷 Chicharrones</span><span>🍗
+                                Pollo</span><span>🍕 Pizzas</span><span>🥘 Criolla</span><span>🥡 Oriental</span></div>
+                    </div>
+                    <div class="gastro-card" data-aos>
+                        <div class="gc-icon">🥂</div>
+                        <h3>Catering &amp; Eventos</h3>
+                        <p>Menús personalizados, montaje y servicio de calidad para compromisos sociales y eventos
+                            corporativos.</p>
+                    </div>
+                </div>
+                <div class="gastro-photo-col">
+                    <!-- FOTOS GASTRONOMÍA — reemplaza los placeholders -->
+                    <div class="photo-frame photo-frame-border ratio-4-3" data-aos="left">
+                        <!-- <img src="fotos/gastro-platos.jpg" alt="Platos"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🍽️</div>
+                            <div class="photo-placeholder-text">Foto Gastronomía 1</div>
+                            <div class="photo-placeholder-sub">Platos típicos, presentación · 600×450px</div>
+                        </div>
+                        <div class="photo-caption">Platos típicos peruanos</div>
+                    </div>
+                    <div class="photo-frame photo-frame-border ratio-4-3" data-aos="left">
+                        <!-- <img src="fotos/gastro-evento.jpg" alt="Evento"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🥂</div>
+                            <div class="photo-placeholder-text">Foto Gastronomía 2</div>
+                            <div class="photo-placeholder-sub">Catering o evento social · 600×450px</div>
+                        </div>
+                        <div class="photo-caption">Catering para eventos</div>
+                    </div>
+                    <div class="photo-frame photo-frame-border ratio-16-9" data-aos="left">
+                        <!-- <img src="fotos/gastro-pasteleria.jpg" alt="Pastelería"> -->
+                        <div class="photo-placeholder">
+                            <div class="photo-placeholder-icon">🎂</div>
+                            <div class="photo-placeholder-text">Foto Gastronomía 3</div>
+                            <div class="photo-placeholder-sub">Pasteles, tortas, panadería · 800×450px</div>
+                        </div>
+                        <div class="photo-caption">Pastelería y panadería</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 LICITACIONES -->
+    <section class="srv-section bg-dark" id="licitaciones">
+        <div class="srv-section-label">05</div>
+        <div class="container">
+            <div class="srv-section-header">
+                <div class="srv-section-tag">Licitaciones</div>
+                <h2 class="srv-title">Sector Público <em>&amp; Privado</em></h2>
+                <p class="srv-desc">Participamos en procesos de licitación con instituciones del sector público y
+                    privado a nivel nacional, con capacidad legal y operativa para cumplir cualquier contrato.</p>
+            </div>
+            <div class="licit-grid">
+                <div class="licit-card" data-aos>
+                    <div class="licit-icon">📋</div>
+                    <h3>Invitación Directa</h3>
+                    <p>Respondemos a invitaciones directas de entidades públicas y privadas para la prestación de bienes
+                        y servicios.</p>
+                </div>
+                <div class="licit-card" data-aos>
+                    <div class="licit-icon">🏛️</div>
+                    <h3>Licitación Pública</h3>
+                    <p>Participamos en procesos formales de licitación pública nacional, cumpliendo todos los
+                        requerimientos técnicos y legales.</p>
+                </div>
+                <div class="licit-card" data-aos>
+                    <div class="licit-icon">⚙️</div>
+                    <h3>Administración Directa</h3>
+                    <p>Ejecución de contratos mediante administración directa, garantizando cumplimiento de plazos y
+                        calidad.</p>
+                </div>
+                <div class="licit-card" data-aos>
+                    <div class="licit-icon">🤝</div>
+                    <h3>Convenios &amp; Asociaciones</h3>
+                    <p>Capacidad para desarrollar actividades en forma individual o asociada con personas naturales y
+                        jurídicas, nacionales o extranjeras.</p>
+                </div>
+            </div>
+            <div class="licit-banner" data-aos="scale">
+                <div>
+                    <h3>¿Necesitas un proveedor confiable para tu licitación?</h3>
+                    <p>Tenemos documentación legal, experiencia y capacidad operativa para participar en tu proceso de
+                        contratación.</p>
+                </div>
+                <a href="contacto.html" class="btn btn-primary">Consultar →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-mid">
+        <div class="container">
+            <div class="cta-box" data-aos="scale">
+                <div class="cta-text">
+                    <h2>¿Dudas sobre <em>algún servicio?</em></h2>
+                    <p>Escríbenos y un representante te responderá a la brevedad.</p>
+                </div><a href="contacto.html" class="btn btn-primary">Ir a Contacto →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="nav-logo" style="margin-bottom:.4rem;">
+                        <div class="nav-logo-img">MT</div>
+                        <div class="nav-logo-text"><span class="nav-logo-name">MIRASUR TLI</span><span
+                                class="nav-logo-sac">S.A.C.</span></div>
+                    </a>
+                    <p>Empresa peruana multirubro con sede en Puno.</p>
+                    <p class="footer-addr">📍 Jr. Revolución N° 377 · Puno, Perú</p>
+                </div>
+                <div>
+                    <h5>Navegación</h5>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Servicios</h5>
+                    <ul class="footer-nav">
+                        <li><a href="#transporte">Transporte</a></li>
+                        <li><a href="#turismo">Turismo</a></li>
+                        <li><a href="#comercio">Comercio</a></li>
+                        <li><a href="#gastronomia">Gastronomía</a></li>
+                        <li><a href="#licitaciones">Licitaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Mirasur Tli S.A.C. — Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
